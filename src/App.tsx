@@ -1,6 +1,9 @@
 import "./App.css";
 
 function App() {
+  const name = "Shaikh Nayeem Uddin";
+  const nameArray = name.split("");
+
   return (
     <div className="main">
       {/* <div className="loading">
@@ -8,13 +11,14 @@ function App() {
         <div className="box"></div>
       </div> */}
       <div className="card">
-        <h1>Heading</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam
-          culpa a adipisci, deleniti temporibus vel aperiam itaque dicta
-          blanditiis minus repudiandae voluptas reprehenderit, totam aspernatur
-          magni dignissimos veritatis. Est.
-        </p>
+        {nameArray.map((chars, index) => (
+          <span
+            className="chars"
+            style={{ transitionDuration: `${index * 150}ms` }}
+          >
+            {chars}
+          </span>
+        ))}
       </div>
     </div>
   );

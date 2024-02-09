@@ -3,18 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(2, 2, 78);
 }
 
 .card {
-  background-color: tomato;
-  width: 500px;
-  padding: 20px;
-  border-radius: 20px;
-  clip-path: circle(8.3% at 95% 6%);
-  transition: ease;
-  transition-duration: 2s;
+  color: white;
+}
+
+.chars {
+  font-size: xxx-large;
+  font-weight: 900;
 }
 
 .card:hover {
-  clip-path: circle(85.6% at 43% 36%);
+  color: tomato;
 }
